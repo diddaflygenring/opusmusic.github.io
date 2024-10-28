@@ -282,7 +282,7 @@ max-width: 100%;
   margin-right: 7%;}
   #svorlisti{display: none;}
   
- #hljodfaeri {float: left; 
+ .hljodfaeri {float: left; 
  margin: 0.375em 1.75em 1em 0;
      width:128px;}
   
