@@ -280,137 +280,142 @@ class="svorsidur"
      
       </div>
   
-     <div class="column2">
+      <div class="column2">
        
-     <div class="opuskall">
+        <div class="opuskall">
+          <button  style=" padding: 0;
+   border: none;
+   background: none;" id="islenska" onclick="myFunction()"><img id="bt" onmouseout="mouseOut3()" onmouseover="mouseOver3()" style=" cursor:pointer;" src="m/isl_icon.png" ></button>
+   
+          <img  style="position: relative;" src="m/opuskall-haus.png" 
+     >
+          
+          </div>
+    <a href="https://www.tonastodin.is/leit/?q=%C3%B3pus" target="_blank" ><img  id="buy" onmouseout="mouseOut()" onmouseover="mouseOver()" style="position: relative;" src="m/kaupa_1.png" 
+     >  </a>
        
-       <img  style="position: relative;" src="https://cdn.glitch.global/8276be85-9a9b-4915-a138-2e4279728780/opuskall-haus.png?v=1730032844815" 
-  >
-       
-       </div>
- <a href="https://www.tonastodin.is/leit/?q=%C3%B3pus" target="_blank" ><img  id="buy" onmouseout="mouseOut()" onmouseover="mouseOver()" style="position: relative;" src="https://cdn.glitch.global/8276be85-9a9b-4915-a138-2e4279728780/kaupa_1.png?v=1730065942750" 
-  >  </a>
-    
-    <a  href="mailto: info@opusmusic.is" >  <img  id="opusmail" onmouseout="mouseOut1()" onmouseover="mouseOver1()" style="position: relative;  " src="https://cdn.glitch.global/8276be85-9a9b-4915-a138-2e4279728780/opusog_1.png?v=1730065984340" 
-  >   </a> 
-        <a href="mailto: express@talnet.is" >  <img  id="verkefnimail" onmouseout="mouseOut2()" onmouseover="mouseOver2()" style="position: relative;  " src="https://cdn.glitch.global/8276be85-9a9b-4915-a138-2e4279728780/tonh_1.png?v=1730066150668" 
-  >   </a>
-     <div class="opuskall" style= "margin-bottom: 50px;">  <img  style="position: relative;" src="https://cdn.glitch.global/8276be85-9a9b-4915-a138-2e4279728780/opuskall-faetur.png?v=1730034214537" 
-                                  > </div>
-       
-       <script> 
-       function mouseOver() {
-    document.getElementById("buy").src="https://cdn.glitch.global/8276be85-9a9b-4915-a138-2e4279728780/kaupa_2.png?v=1730065967588";
-  }
-  
-  function mouseOut() {
-  document.getElementById("buy").src="https://cdn.glitch.global/8276be85-9a9b-4915-a138-2e4279728780/kaupa_1.png?v=1730065942750";
-  }
-          function mouseOver1() {
-    document.getElementById("opusmail").src="https://cdn.glitch.global/8276be85-9a9b-4915-a138-2e4279728780/opusog_2.png?v=1730066003556";
-  }
-  
-  function mouseOut1() {
-  document.getElementById("opusmail").src="https://cdn.glitch.global/8276be85-9a9b-4915-a138-2e4279728780/opusog_1.png?v=1730065984340";
-  }
-         function mouseOver2() {
-    document.getElementById("verkefnimail").src="https://cdn.glitch.global/8276be85-9a9b-4915-a138-2e4279728780/tonh_2.png?v=1730066176357";
-  }
-  
-  function mouseOut2() {
-  document.getElementById("verkefnimail").src="https://cdn.glitch.global/8276be85-9a9b-4915-a138-2e4279728780/tonh_1.png?v=1730066150668";
-  }
-         
-           function mouseOver3() {
-    document.getElementById("bt").style.opacity="75%";
-  }
-  
-  function mouseOut3() {
-  document.getElementById("bt").style.opacity="100%";
-  }
-         var slideshowContainers = document.getElementsByClassName("slideshow-container");
-/* For each container get starting variables */
-for(let s = 0; s < slideshowContainers.length; s++) {
-    /* Read the new data attribute */        
-    var cycle = slideshowContainers[s].dataset.cycle;
-    /* Find all the child nodes with class mySlides */
-    var slides = slideshowContainers[s].querySelectorAll('.mySlides');
-    var slideIndex = 0;
-    /* Now we can cycle slides, but this recursive function must have parameters */
-    /* slides and cycle never change, those are unique for each slide container */
-    /* slideIndex will increase during each iteration */
-    showSlides(slides, slideIndex, cycle);
-};
-
-/* Function is alsmost same, but now it uses 3 new parameters */
-function showSlides(slides, slideIndex, cycle) {
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    };
-    slideIndex++;
-    if (slideIndex > slides.length) {
-        slideIndex = 1
-    };
-    slides[slideIndex - 1].style.display = "block";
-    /* Calling same function, but with new parameters and cycle time */
-    setTimeout(function() {
-        showSlides(slides, slideIndex, cycle)
-    }, cycle);
-};
-       </script>
+       <a  href="mailto: info@opusmusic.is" >  <img  id="opusmail" onmouseout="mouseOut1()" onmouseover="mouseOver1()" style="position: relative;  " src="m/opusog_1.png" 
+     >   </a> 
+           <a href="mailto: express@talnet.is" >  <img  id="verkefnimail" onmouseout="mouseOut2()" onmouseover="mouseOver2()" style="position: relative;  " src="m/tonh_1.png" 
+     >   </a>
+        <div class="opuskall" style= "margin-bottom: 50px;">  <img  style="position: relative;" src="m/opuskall-faetur.png" 
+                                     > </div>
+          
+          <script> 
+          function mouseOver() {
+       document.getElementById("buy").src="m/kaupa_2.png";
+     }
      
-     <p>
-       
-       </p>
+     function mouseOut() {
+     document.getElementById("buy").src="m/kaupa_1.png";
+     }
+             function mouseOver1() {
+       document.getElementById("opusmail").src="m/opusog_2.png";
+     }
      
-  
-      <div id="svorlisti">
+     function mouseOut1() {
+     document.getElementById("opusmail").src="m/opusog_1.png";
+     }
+            function mouseOver2() {
+       document.getElementById("verkefnimail").src="m/tonh_2.png";
+     }
+     
+     function mouseOut2() {
+     document.getElementById("verkefnimail").src="m/tonh_1.png";
+     }
+            
+              function mouseOver3() {
+       document.getElementById("bt").style.opacity="75%";
+     }
+     
+     function mouseOut3() {
+     document.getElementById("bt").style.opacity="100%";
+     }
+            var slideshowContainers = document.getElementsByClassName("slideshow-container");
+   /* For each container get starting variables */
+   for(let s = 0; s < slideshowContainers.length; s++) {
+       /* Read the new data attribute */        
+       var cycle = slideshowContainers[s].dataset.cycle;
+       /* Find all the child nodes with class mySlides */
+       var slides = slideshowContainers[s].querySelectorAll('.mySlides');
+       var slideIndex = 0;
+       /* Now we can cycle slides, but this recursive function must have parameters */
+       /* slides and cycle never change, those are unique for each slide container */
+       /* slideIndex will increase during each iteration */
+       showSlides(slides, slideIndex, cycle);
+   };
+   
+   /* Function is alsmost same, but now it uses 3 new parameters */
+   function showSlides(slides, slideIndex, cycle) {
+       for (i = 0; i < slides.length; i++) {
+           slides[i].style.display = "none";
+       };
+       slideIndex++;
+       if (slideIndex > slides.length) {
+           slideIndex = 1
+       };
+       slides[slideIndex - 1].style.display = "block";
+       /* Calling same function, but with new parameters and cycle time */
+       setTimeout(function() {
+           showSlides(slides, slideIndex, cycle)
+       }, cycle);
+   };
+          </script>
+        
+        <p>
+          
+          </p>
         
      
-         <img  id="svornidri"   src="https://cdn.glitch.global/8276be85-9a9b-4915-a138-2e4279728780/svor.png?v=1730066496882" >
-        <ul style="margin-bottom: 30px; margin-top: -10px;">
-<li><a href="./Opus1_svor">Ópus 1</a></li>
-<li><a href="./Opus2_svor">Ópus 2</a></li>
-<li><a href="./Opus3_svor">Ópus 3</a></li>
-<li><a href="./Opus4_svor">Ópus 4</a></li>
-<li><a href="./Opus5_svor">Ópus 5</a></li>
-			</ul>
-          </div>
-       
-        </div>
-        </div>
-      </body>
-  <footer style = "margin-top: 40px; margin-bottom: 60px;">
-   <div>
+         <div id="svorlisti">
+           
+        
+            <img  id="svornidri"   src="m/svorlisti.png" >
+           <ul style="margin-bottom: 30px; margin-top: -10px;">
+   <li><a href="./Opus1_svor">Ópus 1</a></li>
+   <li><a href="./Opus2_svor">Ópus 2</a></li>
+   <li><a href="./Opus3_svor">Ópus 3</a></li>
+   <li><a href="./Opus4_svor">Ópus 4</a></li>
+   <li><a href="./Opus5_svor">Ópus 5</a></li>
+         </ul>
+             </div>
+          
+           </div>
+           </div>
+         </body>
+     <footer style = "margin-top: 40px; margin-bottom: 60px;">
+      <div>
+        
+      <img style="width: 60px; margin-bottom:-8px;" src="m/opusmusictheory logo.png">
+        <p class="text"><b>Ópus</b> Music Theory</p></div>
+     <p>
+      kt. 651011-0350</p>
+       <p>Hörðaland 22 | 108 Reykjavík | Iceland </p>
+       <p><!-- Begin Email Cloaking -->
+   <script language="javascript" type="text/javascript"><!--
+   //
+   // Anti-Spam Email Cloaking 3.0 by David Tulga
+   // https://www.davidtulga.com/antispamemail.htm
+   //
+   x = '&#64;';
+   eml = '&#105;&#110;&#102;&#111;' + x + '&#111;&#112;&#117;&#115;&#109;&#117;&#115;&#105;&#99;&#46;&#105;&#115;';
+   msg = '&#105;&#110;&#102;&#111;' + x + '&#111;&#112;&#117;&#115;&#109;&#117;&#115;&#105;&#99;&#46;&#105;&#115;';
+   out = '<a class="cloak_eml" href="mailto:' + eml + '">' + msg + '</a>';
+   document.write(out);
+   // -->
+   </script>
+   <noscript>
+   <!-- This message is displayed if the browser has javascript disabled. -->
+   &#105;&#110;&#102;&#111; (at) &#111;&#112;&#117;&#115;&#109;&#117;&#115;&#105;&#99;&#46;&#105;&#115; [ &#105;&#110;&#102;&#111; (at) &#111;&#112;&#117;&#115;&#109;&#117;&#115;&#105;&#99;&#46;&#105;&#115; ] 
+   </noscript>
+   <!-- End Email Cloaking --></p>
+   
+       <p>© Ópus Music Theory</p>
+        <!-- Start of CuterCounter Code -->
+     <a style="float: right; margin-bottom:20px;" href="https://www.cutercounter.com/" target="_blank">   <img src="https://www.cutercounter.com/hits.php?id=hmxqkkpn&nd=6&style=1" border="0" alt="hit counter"></a>
+   <!-- End of CuterCounter Code -->
+     </footer>
      
-   <img style="width: 60px; margin-bottom:-8px;" src="https://cdn.glitch.global/675392fa-abd0-4d73-ab58-51f64d69403f/opusmusictheory%20copy.png?v=1729714924804">
-     <p class="text"><b>Ópus</b> Music Theory</p></div>
-  <p>
-   kt. 651011-0350</p>
-    <p>Hörðaland 22 | 108 Reykjavík | Iceland </p>
-    <p><!-- Begin Email Cloaking -->
-<script language="javascript" type="text/javascript"><!--
-//
-// Anti-Spam Email Cloaking 3.0 by David Tulga
-// https://www.davidtulga.com/antispamemail.htm
-//
-x = '&#64;';
-eml = '&#105;&#110;&#102;&#111;' + x + '&#111;&#112;&#117;&#115;&#109;&#117;&#115;&#105;&#99;&#46;&#105;&#115;';
-msg = '&#105;&#110;&#102;&#111;' + x + '&#111;&#112;&#117;&#115;&#109;&#117;&#115;&#105;&#99;&#46;&#105;&#115;';
-out = '<a class="cloak_eml" href="mailto:' + eml + '">' + msg + '</a>';
-document.write(out);
-// -->
-</script>
-<noscript>
-<!-- This message is displayed if the browser has javascript disabled. -->
-&#105;&#110;&#102;&#111; (at) &#111;&#112;&#117;&#115;&#109;&#117;&#115;&#105;&#99;&#46;&#105;&#115; [ &#105;&#110;&#102;&#111; (at) &#111;&#112;&#117;&#115;&#109;&#117;&#115;&#105;&#99;&#46;&#105;&#115; ] 
-</noscript>
-<!-- End Email Cloaking --></p>
-
-    <p>© Ópus Music Theory</p>
-     <!-- Start of CuterCounter Code -->
-  <a style="float: right; margin-bottom:20px;" href="https://www.cutercounter.com/" target="_blank">   <img src="https://www.cutercounter.com/hits.php?id=hmxqkkpn&nd=6&style=1" border="0" alt="hit counter"></a>
-<!-- End of CuterCounter Code -->
-</footer>
-  
-</html>
+   
+   </html>
+   
