@@ -285,10 +285,7 @@ class="svorsidur">
       <div class="column2">
        
         <div class="opuskall">
-          <button  style=" padding: 0;
-   border: none;
-   background: none;" id="islenska" onclick="myFunction()"><img id="bt" onmouseout="mouseOut3()" onmouseover="mouseOver3()" style=" cursor:pointer;" src="m/isl_icon.png" ></button>
-   
+        
           <img  style="position: relative;" src="m/opuskall-haus.png" 
      >
           
@@ -303,66 +300,6 @@ class="svorsidur">
         <div class="opuskall" style= "margin-bottom: 50px;">  <img  style="position: relative;" src="m/opuskall-faetur.png" 
                                      > </div>
           
-          <script> 
-          function mouseOver() {
-       document.getElementById("buy").src="m/kaupa_2.png";
-     }
-     
-     function mouseOut() {
-     document.getElementById("buy").src="m/kaupa_1.png";
-     }
-             function mouseOver1() {
-       document.getElementById("opusmail").src="m/opusog_2.png";
-     }
-     
-     function mouseOut1() {
-     document.getElementById("opusmail").src="m/opusog_1.png";
-     }
-            function mouseOver2() {
-       document.getElementById("verkefnimail").src="m/tonh_2.png";
-     }
-     
-     function mouseOut2() {
-     document.getElementById("verkefnimail").src="m/tonh_1.png";
-     }
-            
-              function mouseOver3() {
-       document.getElementById("bt").style.opacity="75%";
-     }
-     
-     function mouseOut3() {
-     document.getElementById("bt").style.opacity="100%";
-     }
-            var slideshowContainers = document.getElementsByClassName("slideshow-container");
-   /* For each container get starting variables */
-   for(let s = 0; s < slideshowContainers.length; s++) {
-       /* Read the new data attribute */        
-       var cycle = slideshowContainers[s].dataset.cycle;
-       /* Find all the child nodes with class mySlides */
-       var slides = slideshowContainers[s].querySelectorAll('.mySlides');
-       var slideIndex = 0;
-       /* Now we can cycle slides, but this recursive function must have parameters */
-       /* slides and cycle never change, those are unique for each slide container */
-       /* slideIndex will increase during each iteration */
-       showSlides(slides, slideIndex, cycle);
-   };
-   
-   /* Function is alsmost same, but now it uses 3 new parameters */
-   function showSlides(slides, slideIndex, cycle) {
-       for (i = 0; i < slides.length; i++) {
-           slides[i].style.display = "none";
-       };
-       slideIndex++;
-       if (slideIndex > slides.length) {
-           slideIndex = 1
-       };
-       slides[slideIndex - 1].style.display = "block";
-       /* Calling same function, but with new parameters and cycle time */
-       setTimeout(function() {
-           showSlides(slides, slideIndex, cycle)
-       }, cycle);
-   };
-          </script>
         
         <p>
           
